@@ -1,13 +1,29 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+
+# Lab 3 + Lab 4: Home Page
 def index(request):
     name = request.GET.get("name") or "Lama"
     return render(request, "bookmodule/index.html", {"name": name})
 
+
+# Lab 3: URL Parameter
 def index2(request, val1=0):
     return HttpResponse("value1 = " + str(val1))
 
+
+# Lab 4: List of Books
+def list_books(request):
+    return render(request, "bookmodule/list_books.html")
+
+
+# Lab 4: About Us
+def aboutus(request):
+    return render(request, "bookmodule/aboutus.html")
+
+
+# Lab 3 + Lab 4: Book Details
 def viewbook(request, bookId):
     book1 = {
         'id': 123,
@@ -31,4 +47,4 @@ def viewbook(request, bookId):
 
     context = {'book': targetBook}
 
-    return render(request, 'bookmodule/show.html', context) 
+    return render(request, "bookmodule/one_book.html", context) 
