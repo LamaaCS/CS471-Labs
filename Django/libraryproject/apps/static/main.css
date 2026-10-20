@@ -1,0 +1,45 @@
+
+/* Lab 5 - Task 1: Links and Layout Customization */
+
+.links-container {
+    width: 100%;
+}
+
+.links-container a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+/* First link */
+#link1 {
+    background-color: lightgreen;
+    color: red;
+}
+
+/* Second link */
+#link2 {
+    background-color: #555555;
+    color: yellow;
+}
+
+/* Third link */
+#link3 {
+    background-color: black;
+    color: white;
+}
+
+/* Link states */
+.links-container a:visited {
+    text-decoration: underline;
+}
+
+.links-container a:hover {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.links-container a:active {
+    background-color: orange;
+    color: black;
+}

@@ -48,3 +48,19 @@ def viewbook(request, bookId):
     context = {'book': targetBook}
 
     return render(request, "bookmodule/one_book.html", context) 
+
+# Lab 5 - Task 1: HTML5 Links
+def html5_links(request):
+    return render(request, "bookmodule/links.html")
+
+# Lab 5 - Task 2: Text Formatting
+def html5_formatting(request):
+    return render(request, "bookmodule/formatting.html")
+
+# Lab 5 - Task 3: Nested Lists
+def html5_listing(request):
+    return render(request, "bookmodule/listing.html")
+
+# Lab 5 - Task 4: HTML Tables
+def html5_tables(request):
+    return render(request, "bookmodule/tables.html")
