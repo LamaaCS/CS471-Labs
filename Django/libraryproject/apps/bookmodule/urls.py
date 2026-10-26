@@ -21,4 +21,8 @@ urlpatterns = [
 
     # Lab 5 - Task 4
     path('html5/tables', views.html5_tables, name='books.html5_tables'),
+
+    # Lab 6 - Task 1
+    path('search', views.search, name='books.search'),
+
 ]
